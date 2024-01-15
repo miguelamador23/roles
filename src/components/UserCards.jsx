@@ -9,7 +9,7 @@ function UserCards() {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const response = await fetch('public/users.json');
+        const response = await fetch('users.json');
         const data = await response.json();
         setUsers(data);
         setFilteredUsers(data);
